@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le jeu du Pendu</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Le jeu du Pendu</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="start()">Redemarrer une partie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="startCustom()">Redemarrer une partie custom</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="points">Tu as 0 points</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="resetpoints()">(Reset)</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <main>
+      <h1 class="title">Le jeu du pendu</h1>
+        <div class="letters-button">
+        </div>
+        <div class="hanged-stat">
+        </div>
+        <div class="empty-letters">
+          <div class="cases">
+          </div>
+        </div>
+    </main>
+    <script src="assets/js/index.js"></script>
+</body>
+</html>
